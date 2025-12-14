@@ -1,0 +1,16 @@
+{
+  "name": "web-proxy-netlify",
+  "version": "1.0.0",
+  "main": "functions/api.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2",
+    "cookie-parser": "^1.4.6",
+    "serverless-http": "^3.2.0"
+  }
+}
