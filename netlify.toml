@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  functions = "functions"
+
+# 静的ファイル(index.htmlなど)が存在しないリクエストは
+# すべてAPIのFunctionsへ転送する
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api"
+  status = 200
